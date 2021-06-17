@@ -8,7 +8,7 @@ import { RadioGroup, FormControl, FormLabel, FormControlLabel, Divider } from '@
 import RadioButton from '../RadioButton';
 import { FaArrowAltCircleLeft } from 'react-icons/fa'
 
-const GamePage = ({ dimension, imageUrl, history }) => {
+const GamePage = ({ dimension, imageUrl }) => {
 
     const [ heading, setHeading ] = useState('Sliding Puzzle');
     const [ algorithm, setAlgorithm ] = useState('ast');
