@@ -6,6 +6,7 @@ import RadioButton from './components/RadioButton.js';
 import Slider from './components/slider/Slider';
 import './Styles/Modals.css'
 import GamePage from './components/game_controller/GamePage';
+import {isMobile} from 'react-device-detect';
 
 Modal.setAppElement('#root');
 
@@ -44,7 +45,25 @@ const App = () => {
   }
 
   return (
+    isMobile?
     <div className="App">
+      <Modal
+        isOpen={true}
+        style={{
+          overlay: {
+            backgroundColor: 'grey'
+          },
+          content: {
+            color: 'orange'
+          }
+        }}
+      >
+        <div className='welcome-modal' style={{textAlign: 'center', fontWeight: 'bold', marginTop: '175px'}}>
+          Please Open in desktop for better experience.
+        </div>
+      </Modal>
+    </div>
+    :<div className="App">
       <Modal
         isOpen={sliderModalOpen}
         style={{
