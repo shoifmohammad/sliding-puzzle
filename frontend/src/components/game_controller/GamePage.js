@@ -6,8 +6,9 @@ import './GamePage.css';
 import { BACKEND_ENDPOINT } from '../assets/constants';
 import { RadioGroup, FormControl, FormLabel, FormControlLabel, Divider } from '@material-ui/core';
 import RadioButton from '../RadioButton';
+import { FaArrowAltCircleLeft } from 'react-icons/fa'
 
-const GamePage = ({ dimension, imageUrl }) => {
+const GamePage = ({ dimension, imageUrl, history }) => {
 
     const [ heading, setHeading ] = useState('Sliding Puzzle');
     const [ algorithm, setAlgorithm ] = useState('ast');
@@ -56,9 +57,16 @@ const GamePage = ({ dimension, imageUrl }) => {
         setSolving(false);
     }
 
+    const BackToHomePage = () => {
+        window.location.reload(false);
+    }
+
     return (
         <div>
-            <h1 className='heading'>{heading}</h1>
+            <div className='heading' >
+                <FaArrowAltCircleLeft className='back-arrow' onClick={BackToHomePage} />
+                {heading}
+            </div>
             <div className='gamepage'>
                 <div className='board-component'>
                     {(solving && moves.length > 0)?
