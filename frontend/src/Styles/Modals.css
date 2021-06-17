@@ -1,3 +1,9 @@
+.suggestions {
+    font-family: 'Courier New', Courier, monospace;
+    color: coral;
+    font-size: 25px;
+}
+
 .welcome-modal {
     width: 100%;
     display: flex;

@@ -58,8 +58,10 @@ const App = () => {
           }
         }}
       >
-        <div className='welcome-modal' style={{textAlign: 'center', fontWeight: 'bold', marginTop: '175px'}}>
-          Please Open in desktop for better experience.
+        <div className='welcome-modal' style={{textAlign: 'center', marginTop: '-50px'}}>
+          <h1>Welcome</h1>
+          <div className='suggestions' style={{marginBottom: '40px'}} >Please open in desktop for better experience</div>
+          <div className='suggestions' >If you still want to continue with mobile, turn on desktop mode and refresh the page</div>
         </div>
       </Modal>
     </div>
