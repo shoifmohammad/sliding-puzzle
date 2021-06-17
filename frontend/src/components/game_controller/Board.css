@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+.board {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.board-button {
+    width: 150px;
+    text-align: center;
+    outline: none;
+    border: 0;
+    font-size: 30px;
+    line-height: 1;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: rgb(194, 19, 194);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    margin-top: 70px;
+}
+
+.board-button:hover,
+.board-button:focus {
+    background-color: rgb(231, 20, 231);
+}
+
+.tile {
+    position: absolute;
+    display: flex;
+    background-color: blueviolet;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 35px;
+    border: solid 1px white;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.tile:hover {
+    background-color: rgb(174, 96, 247);
+}

@@ -1,0 +1,56 @@
+.welcome-modal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.welcome-modal-body {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.game-parameters {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: lightcoral;
+}
+
+.game-instructions {
+    width: 63%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    color: lightcoral;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.start-button {
+    width: 150px;
+    text-align: center;
+    outline: none;
+    border: 0;
+    font-size: 30px;
+    line-height: 1;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: rgb(194, 19, 194);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    margin-top: 100px;
+}
+
+.start-button:hover,
+.start-button:focus {
+    background-color: rgb(231, 20, 231);
+}

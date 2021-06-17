@@ -1,0 +1,77 @@
+.heading {
+    color: rgb(34, 119, 218);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 45px;
+    margin-top: 60px;
+    height: 60px;
+}
+
+.gamepage {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.board-component {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.solver-component {
+    width: 49%;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 150px;
+}
+
+.help-window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.solve-button {
+    width: 150px;
+    text-align: center;
+    outline: none;
+    border: 0;
+    font-size: 30px;
+    line-height: 1;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: rgb(194, 19, 194);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    margin-top: 265px;
+}
+
+.solve-button:hover,
+.solve-button:focus {
+    background-color: rgb(231, 20, 231);
+}
+
+.disabled-button {
+    width: 150px;
+    text-align: center;
+    outline: none;
+    border: 0;
+    font-size: 30px;
+    line-height: 1;
+    padding: 15px 25px;
+    border-radius: 30px;
+    background-color: rgb(141, 130, 141);
+    color: white;
+    transition: all 0.3s linear;
+}

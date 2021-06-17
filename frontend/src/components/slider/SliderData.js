@@ -1,0 +1,22 @@
+export const SliderData = [
+  {
+    image:
+      'https://i.postimg.cc/P5MHC1Cq/ironman-1.jpg'
+  },
+  {
+    image:
+      'https://i.postimg.cc/3RRCY1rc/bmw-rear.jpg'
+  },
+  {
+    image:
+      'https://i.postimg.cc/SsR8wGmN/nature.jpg'
+  },
+  {
+    image:
+      'https://i.postimg.cc/ZR7HdgDm/bmw-front.jpg'
+  },
+  {
+    image:
+      'https://i.postimg.cc/c1wYPh3T/bridge.jpg'
+  }
+];
